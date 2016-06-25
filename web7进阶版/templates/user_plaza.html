@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户广场</title>
+</head>
+<body>
+    {% for u,t in user,tweets %}
+    <p>
+        {{ u.username}}
+        <br>
+        {{t.connect}}
+        <br>
+        <a href="/tweet/update/{{t.id}}">评论</a>
+        <a href="/tweet/delete/{{t.id}}">赞</a>
+    </p>
+    {% endfor %}
+
+
+</body>
+</html>

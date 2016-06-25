@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>update user</title>
+</head>
+<body>
+    <p>修改 {{ user.username }} 的密码</p>
+    <form class="pure-form" action="/admin/users/update/{{user.id}}" method="POST">
+        <input name="password" class="form-control" placeholder="输入新密码" />
+        <br>
+        <button class="pure-button pure-button-primary" type="submit">提交</button>
+    </form>
+</body>
+</html>

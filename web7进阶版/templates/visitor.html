@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>游客广场</title>
+</head>
+<body>
+    {% for u,t in user,tweets %}
+    <p>
+        {{ u.username}}
+        <br>
+        {{t.connect}}
+    </p>
+    {% endfor %}
+
+</body>
+</html>

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>admin - users</title>
+</head>
+<body>
+{% for u in users %}
+    <p>
+        {{ u.id }}, {{ u.username }}, {{ u.role }}
+        <!--在作业 3 的页面里添加一个删除用户的链接-->
+<!--添加一个 /admin/users/delete/<user_id> 处理删除用户-->
+        <a href="/admin/users/delete/{{u.id}}">delete</a>
+        <a href="/admin/users/update/{{u.id}}">update</a>
+    </p>
+{% endfor %}
+</body>
+</html>
